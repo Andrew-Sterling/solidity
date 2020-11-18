@@ -18,6 +18,9 @@ Compiler Features:
  * Standard-Json: Move the recently introduced ``modelCheckerSettings`` key to ``settings.modelChecker``.
  * Standard-Json: Properly filter the requested output artifacts.
 
+Language Features:
+ * Scanner: Generate a parser error when comments do contain an unbalanced or underflowing set of unicode direction override markers (LRO, RLO, PDF)
+
 Bugfixes:
  * Code generator: Do not pad empty string literals with a single 32-byte zero field in the ABI coder v1.
  * NatSpec: Fix segfault when inheriting return parameter documentation for modifiers with no parameters.
